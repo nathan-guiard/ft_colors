@@ -19,11 +19,11 @@ Magenta: - `C_MAGENTA`<br />
 Cyan - `C_CYAN`<br />
 Blanc: - `C_WHITE`<br />
 
-Voici toutes les combinaisons possibles avec ces couleurs:<br />
-<img src="images/exemple.png" alt="Exemples de combinaisons fg/bg"/>
-
 Toutes les couleures ont une version "high" qui augemente leur intensite en placant un H avant.<br />
 Exemple: `C_HRED`
+
+Voici toutes les combinaisons possibles avec ces couleurs:<br />
+<img src="images/exemple.png" alt="Exemples de combinaisons fg/bg"/>
 
 Si vous ne trouvez toujours pas votre bonheur, il y a 216 autres couleurs disponible. les voici:<br />
 <img src="images/tab.png" alt="Tableau des couleures disponibles"/>
