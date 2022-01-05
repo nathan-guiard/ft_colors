@@ -1,5 +1,5 @@
 # ft_colors
-## Ma petite librairie de mise en forme du texte affiche sur le terminal.
+## Ma petite librairie de mise en forme du texte affiché sur le terminal.
 
 ### Fonction principale: set_layout
 
