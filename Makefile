@@ -25,7 +25,7 @@ ${NAME}: ${OBJ}
 	@ranlib ${NAME}
 	@echo "\033[0;32m\nft_colors sans les fonctions printf: \033[1mPret!\033[0;49;39m\n"
 
-printf: all ${OBJ} ${PRINTFOBJ}
+printf:${OBJ} ${PRINTFOBJ}
 	@ar rc ${NAME} ${PRINTFOBJ}
 	@ranlib ${NAME}
 	@echo "\033[0;32m\nft_colors avec les fonctions printf: \033[1mPret!\033[0;49;39m\n"
