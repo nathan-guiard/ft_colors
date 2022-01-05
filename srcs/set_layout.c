@@ -6,14 +6,13 @@
 /*   By: nguiard <nguiard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 00:27:37 by nguiard           #+#    #+#             */
-/*   Updated: 2022/01/05 02:43:40 by nguiard          ###   ########.fr       */
+/*   Updated: 2022/01/05 13:59:39 by nguiard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "print_layout.h"
+#include "ft_colors.h"
 
-static void	ft_putchar_c(char c)
+void	ft_putchar_c(char c)
 {
 	write(1, &c, 1);
 }
@@ -50,21 +49,32 @@ void	ft_putnbr_c(unsigned int n)
 	}
 }		
 
-
 void	set_layout(unsigned int fg, unsigned int bg, unsigned int style)
 {
 	ft_putstr_c(C_BASE);
-	ft_putnbr_c(style);	
+	if (style == C_RESET)
+		style = 0;
+	ft_putnbr_c(style);
 	ft_putchar_c(';');
-	ft_putstr_c(C_BG);
-	ft_putnbr_c(bg);
-	ft_putchar_c(';');
-	ft_putstr_c(C_FG);
-	ft_putnbr_c(fg);
-	ft_putchar_c('m');
+	if (bg == C_RESET)
+		ft_putstr_c(C_BGRESET);
+	else
+	{
+		ft_putstr_c(C_BG);
+		ft_putnbr_c(bg);
+		ft_putchar_c(';');
+	}
+	if (fg == C_RESET)
+		ft_putstr_c(C_FGRESET);
+	else
+	{
+		ft_putstr_c(C_FG);
+		ft_putnbr_c(fg);
+		ft_putchar_c('m');
+	}
 }
 
-/* void	delete_std(int n)
+void	delete_std(int n)
 {
 	int	i;
 
@@ -74,4 +84,4 @@ void	set_layout(unsigned int fg, unsigned int bg, unsigned int style)
 		ft_putchar_c('\b');
 		i++;
 	}
-}*/
+}
