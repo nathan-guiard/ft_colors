@@ -6,7 +6,7 @@
 /*   By: nguiard <nguiard@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 00:31:32 by nguiard           #+#    #+#             */
-/*   Updated: 2022/01/05 14:12:07 by nguiard          ###   ########.fr       */
+/*   Updated: 2022/01/10 16:49:07 by nguiard          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@
 
 # define C_RESET 42000
 
-# define C_BASE "\033[0;"
+# define C_BASE "\033["
 # define C_BG "48;5;"
 # define C_FG "38;5;"
 # define C_BGRESET "49;"
