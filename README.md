@@ -1,6 +1,8 @@
 # ft_colors
 ## Ma petite librairie de mise en forme du texte affiché sur le terminal.
 
+J'ai une page de mon site web dediee a cette librairie [ici](https://www.nguiard.me/autres-projets/ft_colors-v1/)
+
 ### Fonction principale: set_layout
 
 
